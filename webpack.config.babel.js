@@ -13,6 +13,8 @@ const NPM_LAUNCH_COMMAND = process.env.npm_lifecycle_event
 const SERVER_BUILD = NPM_LAUNCH_COMMAND === 'build'
 process.env.BABEL_ENV = NPM_LAUNCH_COMMAND
 
+console.log(process.env.BABEL_ENV)
+
 const VENDOR_LIBS = [
 	'react',
 	'redux', 
