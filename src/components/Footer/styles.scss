@@ -1,0 +1,38 @@
+.Footer {
+	display: flex;
+	background: #f0f0f0;
+	padding: 25px 100px;
+	column-count: 3;
+	column-width: 100px;
+	column-rule: 1px solid black;
+	justify-content: space-around;
+	
+	section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	section:first-child {
+		font-size: 18px;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.social-media-icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.icon {
+		font-size: 23px;
+		margin-right: 7px;
+	}
+	
+	.icon:hover {
+		cursor: pointer;
+	}
+}
+

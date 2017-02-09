@@ -1,0 +1,19 @@
+.Navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+	.Navigation {
+		padding: 0 10%;
+	}
+}
+
+.active-nav-link {
+
+}
