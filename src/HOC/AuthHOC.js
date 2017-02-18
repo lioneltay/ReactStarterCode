@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import { browserHistory } from 'react-router'
 import { connect } from 'react-redux'
 
-export function AuthHOC(ComponentToWrap) {
+function AuthHOC(ComponentToWrap) {
 	class AuthedComponent extends Component {
 		componentDidMount() {
 			if (!this.props.authenticated) browserHistory.push('/')
@@ -24,3 +24,5 @@ export function AuthHOC(ComponentToWrap) {
 	const mapStateToProps
 	return AuthedComponent
 }
+
+export default AuthHOC
