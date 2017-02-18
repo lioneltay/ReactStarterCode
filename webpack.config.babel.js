@@ -26,15 +26,14 @@ const VENDOR_LIBS = [
 
 const base = {
 	entry: {
-		bundle: './src/index.jsx',
+		bundle: './src/index.js',
 		vendor: VENDOR_LIBS,
 	},
 	resolve: {
 		alias: {
 			styles: path.join(__dirname, '/src/styles'),
 		},
-		modules: [path.resolve(__dirname, "src"), "node_modules"],
-		extensions: ['.js', '.jsx']
+		modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
 	devtool: 'cheap-module-inline-source-map',
 }
