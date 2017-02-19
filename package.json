@@ -11,7 +11,7 @@
     "clean": "rimraf dist",
     "build": "set NODE_ENV=production && npm run clean && webpack -p",
     "dev": "webpack-dev-server",
-		"transpile": "babel test.js --out-file transpiledTest.js && node transpiledTest.js"
+    "transpile": "babel test.js --out-file transpiledTest.js && node transpiledTest.js"
   },
   "keywords": [],
   "author": "Lionel Tay",
@@ -19,6 +19,8 @@
   "dependencies": {
     "firebase": "^3.6.5",
     "react": "^15.4.1",
+    "react-dnd": "^2.2.3",
+    "react-dnd-html5-backend": "^2.2.3",
     "react-dom": "^15.4.1",
     "react-icons": "^2.2.1",
     "react-modal": "^1.6.3",
